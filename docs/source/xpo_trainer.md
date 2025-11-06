@@ -27,7 +27,8 @@ Below is the script to train the model:
 ```python
 # train_xpo.py
 from datasets import load_dataset
-from trl import PairRMJudge, XPOConfig, XPOTrainer
+from trl.experimental.judges import PairRMJudge
+from trl.experimental.xpo import XPOConfig, XPOTrainer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2-0.5B-Instruct")
@@ -150,11 +151,11 @@ While training and evaluating we record the following reward metrics:
 
 ## XPOTrainer
 
-[[autodoc]] XPOTrainer
+[[autodoc]] experimental.xpo.XPOTrainer
     - train
     - save_model
     - push_to_hub
 
 ## XPOConfig
 
-[[autodoc]] XPOConfig
+[[autodoc]] experimental.xpo.XPOConfig

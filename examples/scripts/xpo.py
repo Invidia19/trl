@@ -52,11 +52,14 @@ from trl import (
     PairRMJudge,
     ScriptArguments,
     TrlParser,
-    XPOConfig,
-    XPOTrainer,
     get_kbit_device_map,
     get_quantization_config,
 )
+
+from trl.experimental.xpo import (
+    XPOConfig,
+    XPOTrainer
+) 
 
 
 # Enable logging in a Hugging Face Space

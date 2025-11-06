@@ -33,7 +33,9 @@ from trl import (
     RewardConfig,
     RewardTrainer,
     SFTConfig,
-    SFTTrainer,
+    SFTTrainer
+)
+from trl.experimental.xpo import (
     XPOConfig,
     XPOTrainer,
 )

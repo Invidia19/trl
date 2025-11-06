@@ -82,8 +82,6 @@
       title: RLOO
     - local: sft_trainer
       title: SFT
-    - local: xpo_trainer
-      title: XPO
     title: Trainers
   - local: models
     title: Model Classes
@@ -121,4 +119,6 @@
     title: PAPO
   - local: openenv
     title: OpenEnv Integration
+  - local: xpo_trainer
+    title: XPO
   title: Experimental
